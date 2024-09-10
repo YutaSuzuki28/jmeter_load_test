@@ -9,7 +9,7 @@
       <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
     </TestPlan>
     <hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="SC1_product_browsing" enabled="false">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="SC1_product_browsing">
         <stringProp name="ThreadGroup.num_threads">${SC1_Thread}</stringProp>
         <stringProp name="ThreadGroup.ramp_time">${Ranmp-Up}</stringProp>
         <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
@@ -20,7 +20,7 @@
         </elementProp>
       </ThreadGroup>
       <hashTree>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="SC1_01_Top">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="SC1_01_Top" enabled="true">
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
         <hashTree>
@@ -152,11 +152,11 @@
             <hashTree/>
           </hashTree>
         </hashTree>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="SC1_03_Post_Signin">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="SC1_03_Post_Signin" enabled="true">
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
         <hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="URL_SC1_03_Post_Signin">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="URL_SC1_03_Post_Signin" enabled="true">
             <stringProp name="TestPlan.comments">Detected the start of a redirect chain</stringProp>
             <stringProp name="HTTPSampler.port">0</stringProp>
             <stringProp name="HTTPSampler.protocol">http</stringProp>
@@ -256,7 +256,7 @@
             </ResponseAssertion>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="URL_SC1_04_Top_Signin">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="URL_SC1_04_Top_Signin" enabled="true">
             <stringProp name="HTTPSampler.port">0</stringProp>
             <stringProp name="HTTPSampler.protocol">http</stringProp>
             <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
@@ -558,7 +558,7 @@
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
         <hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="URL_SC1_08_Signoff">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="URL_SC1_08_Signoff" enabled="true">
             <stringProp name="TestPlan.comments">Detected the start of a redirect chain</stringProp>
             <stringProp name="HTTPSampler.port">0</stringProp>
             <stringProp name="HTTPSampler.protocol">http</stringProp>
@@ -618,7 +618,7 @@
             </ResponseAssertion>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="URL_SC1_09_Top_Signout">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="URL_SC1_09_Top_Signout" enabled="true">
             <stringProp name="HTTPSampler.port">0</stringProp>
             <stringProp name="HTTPSampler.protocol">http</stringProp>
             <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
@@ -673,7 +673,7 @@
           </hashTree>
         </hashTree>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="SC2_productsearch" enabled="false">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="SC2_productsearch">
         <stringProp name="ThreadGroup.num_threads">${SC2_Thread}</stringProp>
         <stringProp name="ThreadGroup.ramp_time">${Ranmp-Up}</stringProp>
         <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
@@ -684,11 +684,11 @@
         </elementProp>
       </ThreadGroup>
       <hashTree>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="SC2_01_Top">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="SC2_01_Top" enabled="true">
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
         <hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="URL_SC2_01_Top">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="URL_SC2_01_Top" enabled="true">
             <stringProp name="HTTPSampler.port">0</stringProp>
             <stringProp name="HTTPSampler.protocol">http</stringProp>
             <stringProp name="HTTPSampler.path">/jpetstore/actions/Catalog.action</stringProp>
@@ -751,11 +751,11 @@
             <hashTree/>
           </hashTree>
         </hashTree>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="SC2_02_Signin_Form">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="SC2_02_Signin_Form" enabled="true">
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
         <hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="URL_SC2_02_Signin_Form">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="URL_SC2_02_Signin_Form" enabled="true">
             <stringProp name="HTTPSampler.port">0</stringProp>
             <stringProp name="HTTPSampler.protocol">http</stringProp>
             <stringProp name="HTTPSampler.path">/jpetstore/actions/Account.action;jsessionid=${SC2_JsessionID}</stringProp>
@@ -815,11 +815,11 @@
             <hashTree/>
           </hashTree>
         </hashTree>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="SC2_03_Top_Signin">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="SC2_03_Top_Signin" enabled="true">
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
         <hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="URL_SC2_03_Post_Signin">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="URL_SC2_03_Post_Signin" enabled="true">
             <stringProp name="TestPlan.comments">Detected the start of a redirect chain</stringProp>
             <stringProp name="HTTPSampler.port">0</stringProp>
             <stringProp name="HTTPSampler.protocol">http</stringProp>
@@ -919,7 +919,7 @@
             </ResponseAssertion>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="URL_SC2_04_Top_Signin">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="URL_SC2_04_Top_Signin" enabled="true">
             <stringProp name="HTTPSampler.port">0</stringProp>
             <stringProp name="HTTPSampler.protocol">http</stringProp>
             <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
@@ -977,11 +977,11 @@
             <hashTree/>
           </hashTree>
         </hashTree>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="SC2_04_Search_Category">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="SC2_04_Search_Category" enabled="true">
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
         <hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="URL_SC2_05_Search_Category">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="URL_SC2_05_Search_Category" enabled="true">
             <stringProp name="HTTPSampler.port">0</stringProp>
             <stringProp name="HTTPSampler.protocol">http</stringProp>
             <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
@@ -1087,11 +1087,11 @@
             <hashTree/>
           </hashTree>
         </hashTree>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="SC2_05_View_Product64">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="SC2_05_View_Product64" enabled="true">
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
         <hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="URL_SC2_06_View_Product">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="URL_SC2_06_View_Product" enabled="true">
             <stringProp name="HTTPSampler.port">0</stringProp>
             <stringProp name="HTTPSampler.protocol">http</stringProp>
             <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
@@ -1170,11 +1170,11 @@
             <hashTree/>
           </hashTree>
         </hashTree>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="SC2_06_View_Item">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="SC2_06_View_Item" enabled="true">
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
         <hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="URL_SC2_07_View_Item">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="URL_SC2_07_View_Item" enabled="true">
             <stringProp name="HTTPSampler.port">0</stringProp>
             <stringProp name="HTTPSampler.protocol">http</stringProp>
             <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
@@ -1243,11 +1243,11 @@
             <hashTree/>
           </hashTree>
         </hashTree>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="SC2_07_Signoff">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="SC2_07_Signoff" enabled="true">
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
         <hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="URL_SC2_08_Signoff">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="URL_SC2_08_Signoff" enabled="true">
             <stringProp name="TestPlan.comments">Detected the start of a redirect chain</stringProp>
             <stringProp name="HTTPSampler.port">0</stringProp>
             <stringProp name="HTTPSampler.protocol">http</stringProp>
@@ -1307,7 +1307,7 @@
             </ResponseAssertion>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="URL_SC2_09_Top_Signout">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="URL_SC2_09_Top_Signout" enabled="true">
             <stringProp name="HTTPSampler.port">0</stringProp>
             <stringProp name="HTTPSampler.protocol">http</stringProp>
             <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
@@ -1385,11 +1385,11 @@
         </elementProp>
       </ThreadGroup>
       <hashTree>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="SC3_01_Top">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="SC3_01_Top" enabled="true">
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
         <hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="URL_SC3_01_Top">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="URL_SC3_01_Top" enabled="true">
             <stringProp name="HTTPSampler.port">0</stringProp>
             <stringProp name="HTTPSampler.protocol">http</stringProp>
             <stringProp name="HTTPSampler.path">/jpetstore/actions/Catalog.action</stringProp>
@@ -1621,7 +1621,7 @@
             </ResponseAssertion>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="URL_SC3_04_Top_Signin">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="URL_SC3_04_Top_Signin" enabled="true">
             <stringProp name="HTTPSampler.port">0</stringProp>
             <stringProp name="HTTPSampler.protocol">http</stringProp>
             <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
@@ -1711,7 +1711,7 @@
             </elementProp>
           </HTTPSamplerProxy>
           <hashTree>
-            <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="SC3_ProductID" enabled="true">
+            <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="SC3_ProductID">
               <stringProp name="RegexExtractor.useHeaders">false</stringProp>
               <stringProp name="RegexExtractor.refname">SC3_ProductID</stringProp>
               <stringProp name="RegexExtractor.regex">productId=(.*)&quot;&gt;</stringProp>
@@ -1721,7 +1721,7 @@
               <stringProp name="RegexExtractor.match_number">0</stringProp>
             </RegexExtractor>
             <hashTree/>
-            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP ヘッダマネージャ" enabled="true">
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP ヘッダマネージャ">
               <collectionProp name="HeaderManager.headers">
                 <elementProp name="Referer" elementType="Header">
                   <stringProp name="Header.name">Referer</stringProp>
@@ -1750,9 +1750,9 @@
               </collectionProp>
             </HeaderManager>
             <hashTree/>
-            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="SC3_05" enabled="true">
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="SC3_05">
               <collectionProp name="Asserion.test_strings">
-                <stringProp name="2113909378">FI-[A-Z]{2}-01|K9-[A-Z]{2}-02
+                <stringProp name="-627885779">FI-[A-Z]{2}-01|FI-[A-Z]{2}-02
 </stringProp>
               </collectionProp>
               <stringProp name="Assertion.custom_message"></stringProp>
@@ -1763,11 +1763,11 @@
             <hashTree/>
           </hashTree>
         </hashTree>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="SC3_05_View_Product">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="SC3_05_View_Product" enabled="true">
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
         <hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="URL_SC3_06_View_Product">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="URL_SC3_06_View_Product" enabled="true">
             <stringProp name="HTTPSampler.port">0</stringProp>
             <stringProp name="HTTPSampler.protocol">http</stringProp>
             <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
@@ -1795,7 +1795,7 @@
             </elementProp>
           </HTTPSamplerProxy>
           <hashTree>
-            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP ヘッダマネージャ" enabled="true">
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP ヘッダマネージャ">
               <collectionProp name="HeaderManager.headers">
                 <elementProp name="Referer" elementType="Header">
                   <stringProp name="Header.name">Referer</stringProp>
@@ -1824,7 +1824,7 @@
               </collectionProp>
             </HeaderManager>
             <hashTree/>
-            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="SC3_06" enabled="true">
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="SC3_06">
               <collectionProp name="Asserion.test_strings">
                 <stringProp name="-363242218">EST-[0-9]+</stringProp>
               </collectionProp>
@@ -1834,7 +1834,7 @@
               <intProp name="Assertion.test_type">2</intProp>
             </ResponseAssertion>
             <hashTree/>
-            <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="SC3_ItemtID" enabled="true">
+            <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="SC3_ItemtID">
               <stringProp name="RegexExtractor.useHeaders">false</stringProp>
               <stringProp name="RegexExtractor.refname">SC3_ItemID</stringProp>
               <stringProp name="RegexExtractor.regex">&amp;amp;itemId=(.*)&quot;&gt;</stringProp>
@@ -1846,11 +1846,11 @@
             <hashTree/>
           </hashTree>
         </hashTree>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="SC3_06_View_Item">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="SC3_06_View_Item" enabled="true">
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
         <hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="URL_SC3_07_View_Item">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="URL_SC3_07_View_Item" enabled="true">
             <stringProp name="HTTPSampler.port">0</stringProp>
             <stringProp name="HTTPSampler.protocol">http</stringProp>
             <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
@@ -1907,7 +1907,7 @@
               </collectionProp>
             </HeaderManager>
             <hashTree/>
-            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="SC3_07" enabled="true">
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="SC3_07">
               <collectionProp name="Asserion.test_strings">
                 <stringProp name="1773317404">${SC3_ItemID}</stringProp>
               </collectionProp>
@@ -1919,11 +1919,11 @@
             <hashTree/>
           </hashTree>
         </hashTree>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="SC3_07_Add_Cart">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="SC3_07_Add_Cart" enabled="true">
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
         <hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="URL_SC3_08_Add_Cart">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="URL_SC3_08_Add_Cart" enabled="true">
             <stringProp name="HTTPSampler.port">0</stringProp>
             <stringProp name="HTTPSampler.protocol">http</stringProp>
             <stringProp name="HTTPSampler.path">/jpetstore/actions/Cart.action</stringProp>
@@ -1991,11 +1991,11 @@
             <hashTree/>
           </hashTree>
         </hashTree>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="SC3_08_Order_Form">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="SC3_08_Order_Form" enabled="true">
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
         <hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="URL_SC3_09_Order_Form">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="URL_SC3_09_Order_Form" enabled="true">
             <stringProp name="HTTPSampler.port">0</stringProp>
             <stringProp name="HTTPSampler.protocol">http</stringProp>
             <stringProp name="HTTPSampler.path">/jpetstore/actions/Order.action</stringProp>
@@ -2056,11 +2056,11 @@
             <hashTree/>
           </hashTree>
         </hashTree>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="SC3_9_Check_Order">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="SC3_9_Check_Order" enabled="true">
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
         <hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="URL_SC3_10_Check_Order">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="URL_SC3_10_Check_Order" enabled="true">
             <stringProp name="HTTPSampler.port">0</stringProp>
             <stringProp name="HTTPSampler.protocol">http</stringProp>
             <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
@@ -2225,11 +2225,11 @@
             <hashTree/>
           </hashTree>
         </hashTree>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="SC3_10_Order_Conform">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="SC3_10_Order_Conform" enabled="true">
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
         <hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="URL_SC3_11_Order_Conform">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="URL_SC3_11_Order_Conform" enabled="true">
             <stringProp name="HTTPSampler.port">0</stringProp>
             <stringProp name="HTTPSampler.protocol">http</stringProp>
             <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
@@ -2302,7 +2302,7 @@
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
         <hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="URL_SC3_12_Singoff">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="URL_SC3_12_Singoff" enabled="true">
             <stringProp name="TestPlan.comments">Detected the start of a redirect chain</stringProp>
             <stringProp name="HTTPSampler.port">0</stringProp>
             <stringProp name="HTTPSampler.protocol">http</stringProp>
@@ -2362,7 +2362,7 @@
             </ResponseAssertion>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="URL_SC3_13_Top_Signout">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="URL_SC3_13_Top_Signout" enabled="true">
             <stringProp name="HTTPSampler.port">0</stringProp>
             <stringProp name="HTTPSampler.protocol">http</stringProp>
             <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
@@ -2428,11 +2428,11 @@
         </elementProp>
       </ThreadGroup>
       <hashTree>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="SC4_01_Top">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="SC4_01_Top" enabled="true">
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
         <hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="URL_SC4_01_Top">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="URL_SC4_01_Top" enabled="true">
             <stringProp name="HTTPSampler.port">0</stringProp>
             <stringProp name="HTTPSampler.protocol">http</stringProp>
             <stringProp name="HTTPSampler.path">/jpetstore/actions/Catalog.action</stringProp>
@@ -2495,11 +2495,11 @@
             <hashTree/>
           </hashTree>
         </hashTree>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="SC4_02_Signin_Form">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="SC4_02_Signin_Form" enabled="true">
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
         <hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="URL_SC4_02_Signin_Form">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="URL_SC4_02_Signin_Form" enabled="true">
             <stringProp name="HTTPSampler.port">0</stringProp>
             <stringProp name="HTTPSampler.protocol">http</stringProp>
             <stringProp name="HTTPSampler.path">/jpetstore/actions/Account.action;jsessionid=${SC4_JsessionID}</stringProp>
@@ -2560,11 +2560,11 @@
             <hashTree/>
           </hashTree>
         </hashTree>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="SC4_03_Top_Signin">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="SC4_03_Top_Signin" enabled="true">
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
         <hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="URL_SC4_03_Post_Signin">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="URL_SC4_03_Post_Signin" enabled="true">
             <stringProp name="TestPlan.comments">Detected the start of a redirect chain</stringProp>
             <stringProp name="HTTPSampler.port">0</stringProp>
             <stringProp name="HTTPSampler.protocol">http</stringProp>
@@ -2664,7 +2664,7 @@
             </ResponseAssertion>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="URL_SC4_04_Top_Signin">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="URL_SC4_04_Top_Signin" enabled="true">
             <stringProp name="HTTPSampler.port">0</stringProp>
             <stringProp name="HTTPSampler.protocol">http</stringProp>
             <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
@@ -2722,11 +2722,11 @@
             <hashTree/>
           </hashTree>
         </hashTree>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="SC4_04_Search_dog">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="SC4_04_Search_dog" enabled="true">
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
         <hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="URL_SC4_05_Search_dog">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="URL_SC4_05_Search_dog" enabled="true">
             <stringProp name="HTTPSampler.port">0</stringProp>
             <stringProp name="HTTPSampler.protocol">http</stringProp>
             <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
@@ -2832,11 +2832,11 @@
             <hashTree/>
           </hashTree>
         </hashTree>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="SC4_05_View_Product">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="SC4_05_View_Product" enabled="true">
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
         <hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="URL_SC4_06_View_Product">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="URL_SC4_06_View_Product" enabled="true">
             <stringProp name="HTTPSampler.port">0</stringProp>
             <stringProp name="HTTPSampler.protocol">http</stringProp>
             <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
@@ -2915,11 +2915,11 @@
             <hashTree/>
           </hashTree>
         </hashTree>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="SC4_06_View_Item">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="SC4_06_View_Item" enabled="true">
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
         <hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="URL_SC4_07_View_Item">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="URL_SC4_07_View_Item" enabled="true">
             <stringProp name="HTTPSampler.port">0</stringProp>
             <stringProp name="HTTPSampler.protocol">http</stringProp>
             <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
@@ -2988,11 +2988,11 @@
             <hashTree/>
           </hashTree>
         </hashTree>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="SC4_07_Add_Cart">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="SC4_07_Add_Cart" enabled="true">
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
         <hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="URL_SC4_08_Add_Cart">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="URL_SC4_08_Add_Cart" enabled="true">
             <stringProp name="HTTPSampler.port">0</stringProp>
             <stringProp name="HTTPSampler.protocol">http</stringProp>
             <stringProp name="HTTPSampler.path">/jpetstore/actions/Cart.action</stringProp>
@@ -3060,11 +3060,11 @@
             <hashTree/>
           </hashTree>
         </hashTree>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="SC4_08_Order_Form">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="SC4_08_Order_Form" enabled="true">
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
         <hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="URL_SC4_09_Order_Form">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="URL_SC4_09_Order_Form" enabled="true">
             <stringProp name="HTTPSampler.port">0</stringProp>
             <stringProp name="HTTPSampler.protocol">http</stringProp>
             <stringProp name="HTTPSampler.path">/jpetstore/actions/Order.action</stringProp>
@@ -3125,11 +3125,11 @@
             <hashTree/>
           </hashTree>
         </hashTree>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="SC4_09_Check_Order">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="SC4_09_Check_Order" enabled="true">
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
         <hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="URL_SC4_10_Check_Order">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="URL_SC4_10_Check_Order" enabled="true">
             <stringProp name="HTTPSampler.port">0</stringProp>
             <stringProp name="HTTPSampler.protocol">http</stringProp>
             <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
@@ -3294,11 +3294,11 @@
             <hashTree/>
           </hashTree>
         </hashTree>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="SC4_10_Order_Conform">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="SC4_10_Order_Conform" enabled="true">
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
         <hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="URL_SC4_11_Order_Conform">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="URL_SC4_11_Order_Conform" enabled="true">
             <stringProp name="HTTPSampler.port">0</stringProp>
             <stringProp name="HTTPSampler.protocol">http</stringProp>
             <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
@@ -3367,11 +3367,11 @@
             <hashTree/>
           </hashTree>
         </hashTree>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="SC4_11_Top_Signout">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="SC4_11_Top_Signout" enabled="true">
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
         <hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="URL_SC4_12_Singoff">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="URL_SC4_12_Singoff" enabled="true">
             <stringProp name="TestPlan.comments">Detected the start of a redirect chain</stringProp>
             <stringProp name="HTTPSampler.port">0</stringProp>
             <stringProp name="HTTPSampler.protocol">http</stringProp>
@@ -3431,7 +3431,7 @@
             </ResponseAssertion>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="URL_SC4_13_Top_Signout">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="URL_SC4_13_Top_Signout" enabled="true">
             <stringProp name="HTTPSampler.port">0</stringProp>
             <stringProp name="HTTPSampler.protocol">http</stringProp>
             <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
@@ -3497,7 +3497,7 @@
       <hashTree/>
       <CookieManager guiclass="CookiePanel" testclass="CookieManager" testname="HTTP クッキーマネージャ">
         <collectionProp name="CookieManager.cookies"/>
-        <boolProp name="CookieManager.clearEachIteration">false</boolProp>
+        <boolProp name="CookieManager.clearEachIteration">true</boolProp>
         <boolProp name="CookieManager.controlledByThreadGroup">false</boolProp>
       </CookieManager>
       <hashTree/>
@@ -3519,12 +3519,12 @@
           </elementProp>
           <elementProp name="SC3_Thread" elementType="Argument">
             <stringProp name="Argument.name">SC3_Thread</stringProp>
-            <stringProp name="Argument.value">1</stringProp>
+            <stringProp name="Argument.value">2</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="SC4_Thread" elementType="Argument">
             <stringProp name="Argument.name">SC4_Thread</stringProp>
-            <stringProp name="Argument.value">1</stringProp>
+            <stringProp name="Argument.value">2</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="Ranmp-Up" elementType="Argument">
@@ -3545,8 +3545,8 @@
         </collectionProp>
       </Arguments>
       <hashTree/>
-      <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="結果をツリーで表示" enabled="true">
-        <boolProp name="ResultCollector.error_logging">false</boolProp>
+      <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="結果をツリーで表示">
+        <boolProp name="ResultCollector.error_logging">true</boolProp>
         <objProp>
           <name>saveConfig</name>
           <value class="SampleSaveConfiguration">
